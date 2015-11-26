@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:keepScreenOn="true"
+    >
+<LinearLayout
+	    android:id="@+id/liner1"
+		android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+		>
+			<TextView 
+		    	android:layout_width="100dp"
+		  		android:layout_height="wrap_content"
+		  		android:singleLine="true"
+		  		android:text="@string/platformstatus"/>
+			<EditText 
+			    android:id="@+id/editStatus"
+				android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:hint="@string/defaultstatus"/>
+		</LinearLayout>
+		<LinearLayout
+		    android:id="@+id/liner2"
+		    android:layout_below="@id/liner1"
+			android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		>
+			<Button
+			    android:id="@+id/up"
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/upstring"
+			    android:layout_weight="1"
+				/>
+			<Button
+			    android:id="@+id/work"
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:text="@string/workstring"
+				/>
+			<Button
+			    android:id="@+id/middle"
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:text="@string/middlestring"
+				/>
+			<Button
+			    android:id="@+id/down"
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:text="@string/downstring"
+			    />
+			<Button
+			    android:id="@+id/start"
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:text="@string/startstring"
+				/>
+		</LinearLayout>
+		<LinearLayout
+		    android:id="@+id/liner3"
+		    android:layout_below="@id/liner2"
+			android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		>
+
+			<TextView
+			    android:id="@+id/attu1"
+			    android:layout_width="260dp"
+			    android:layout_height="wrap_content" />
+
+			<TextView 
+			    android:id="@+id/attu2"
+		    	android:layout_width="100dp"
+		  		android:layout_height="wrap_content"
+		  		/>
+
+			<TextView
+			    android:id="@+id/attu3"
+			    android:layout_width="229dp"
+			    android:layout_height="wrap_content" />
+		
+		</LinearLayout>
+
+		<Button
+		    android:id="@+id/bStart"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:text="Start" />
+
+		<Button
+		    android:id="@+id/bStop"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBaseline="@+id/bStart"
+		    android:layout_alignBottom="@+id/bStart"
+		    android:layout_marginLeft="28dp"
+		    android:layout_toRightOf="@+id/bStart"
+		    android:text="Stop" />
+
+		<EditText
+		    android:id="@+id/TT"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_below="@+id/bStart"
+		    android:layout_marginTop="25dp"
+		    android:ems="10"
+		    android:inputType="textMultiLine" >
+
+		    <requestFocus />
+		</EditText>
+
+		<Button
+		    android:id="@+id/bPlay"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_above="@+id/TT"
+		    android:layout_marginLeft="37dp"
+		    android:layout_toRightOf="@+id/bStop"
+		    android:text="显示" />
+
+</RelativeLayout>

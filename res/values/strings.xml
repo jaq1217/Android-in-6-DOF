@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MotusUpper</string>
+    <string name="platformstatus">当前平台状态:</string>
+    <string name="defaultstatus">-1</string>
+    <string name="upstring">上升</string>
+    <string name="middlestring">中立位</string>
+    <string name="downstring">下降</string>
+    <string name="startstring">开始</string>
+	<string name="workstring">工作态</string>
+</resources>
